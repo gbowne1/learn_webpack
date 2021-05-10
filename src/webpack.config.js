@@ -7,7 +7,7 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
     },
-};
+},
 module: {
     rules: [
       {
@@ -15,6 +15,7 @@ module: {
         use: [
             'style-loader',
             'css-loader',
+            'scss-loader',
             'sass-loader',
         ],
       },
@@ -26,6 +27,6 @@ module: {
 
     devServer: {
         contentBase: path.join(__dirname, 'public'),
-        port:9000
+        port: 9000;
     };
 };
