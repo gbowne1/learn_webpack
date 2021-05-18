@@ -25,7 +25,7 @@ module.exports = {
       devServer: [
       {
           contentBase: path.join(__dirname, 'public'),
-          port: 9000,
+          port: 8080,
       },
       ], //was a semicolon
     },
