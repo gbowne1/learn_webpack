@@ -20,14 +20,15 @@
   "homepage": "https://github.com/gbowne1/learn_webpack#readme",
   "dependencies": {
     "lodash": "^4.17.21",
-    "webpack-bundle-analyzer": "^4.4.1"
+    "style-loader": "^2.0.0"
   },
   "devDependencies": {
-    "css-loader": "^5.2.4",
-    "sass-loader": "^10.2.0",
+    "css-loader": "^5.2.5",
+    "sass-loader": "^11.1.1",
     "scss-loader": "^0.0.1",
     "styles-loader": "^3.0.0",
-    "webpack": "^5.37.0",
+    "webpack": "^5.37.1",
+    "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
   }
