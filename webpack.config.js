@@ -1,7 +1,7 @@
-var webpack = require("webpack");
-
 const path = require('path');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
+
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -9,24 +9,23 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
     },
     module: {
-      rules: [
-        {
-          test: /\.scss$/,
-          loader: 'style!css!sass?outputStyle=expanded',
-        },
-      ], // was a semicolon
+        rules: [
+          {
+            test: /\.scss$/,
+            use: [
+                'style-loader',
+                'css-loader',
+                'sass-loader',
+            ],
+          },  
+        ],
+      },
 
       plugins: [
-        {
-          new BundleAnalyzerPlugin(),
-        },
-      ], //was a semicolon
+        new BundleAnalyzerPlugin()
+      ],
 
-      devServer: [
-      {
-          contentBase: path.join(__dirname, 'public'),
-          port: 8080,
-      },
-      ], //was a semicolon
-    },
+      devServer: {
+        port: 9000
+      }
 };

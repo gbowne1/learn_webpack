@@ -23,13 +23,14 @@
     "style-loader": "^2.0.0"
   },
   "devDependencies": {
-    "css-loader": "^5.2.5",
-    "sass-loader": "^11.1.1",
+    "css-loader": "~6.2.0",
+    "sass-loader": "^12.1.0",
     "scss-loader": "^0.0.1",
+    "style-loader": "^3.2.1",
     "styles-loader": "^3.0.0",
-    "webpack": "^5.37.1",
+    "webpack": "~5.52.0",
     "webpack-bundle-analyzer": "^4.4.2",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-cli": "~4.8.0",
+    "webpack-dev-server": "^4.1.1"
   }
 }
